@@ -59,7 +59,8 @@ export const Login = () => {
 
           {error && <p className='text-red-500 text-x5 pb-2.5'>
             {error}
-            </p>}
+            </p>
+          }
 
             <button type='submit' className='btn-primary'>
               Login
