@@ -1,6 +1,6 @@
 const mongoose = require( 'mongoose' );
 
-const incomeSchema = new mongoose.Schema(
+const IncomeSchema = new mongoose.Schema(
     {
         userId: {
             type: mongoose.Schema.Types.ObjectId,
@@ -28,4 +28,4 @@ const incomeSchema = new mongoose.Schema(
     }
 )
 
-module.exports = mongoose.model( 'Income', incomeSchema );
+module.exports = mongoose.model( 'Income', IncomeSchema );
