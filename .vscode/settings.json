@@ -3,5 +3,8 @@
         "downloadexcel",
         "Rahul",
         "shubhambohra"
-    ]
+    ],
+    "github.copilot.enable": {
+        "*": false
+    }
 }

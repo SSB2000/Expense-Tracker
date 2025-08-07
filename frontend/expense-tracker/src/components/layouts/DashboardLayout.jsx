@@ -8,18 +8,17 @@ const DashboardLayout = ({ children, activeMenu }) => {
     return (
         <div className=''>
             <Navbar activeMenu={activeMenu} />
+                {user && (
+                    <div className='flex'>
+                        <div className='hidden lg:block max-[1080p]:hidden'>
+                            <SideMenu activeMenu={activeMenu} />
+                        </div>
 
-            {user && (
-                <div className='flex'>
-                    <div className='max-[1080p]:hidden'>
-                        <SideMenu activeMenu={activeMenu} />
+                        <div className='grow mx-5'>
+                            {children}
+                        </div>
                     </div>
-
-                    <div className='grow mx-5'>
-                        {children}
-                    </div>
-                </div>
-            )}
+                )}
         </div>
     );
 }

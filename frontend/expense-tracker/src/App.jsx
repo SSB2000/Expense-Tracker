@@ -13,6 +13,7 @@ import Income from "./pages/Dashboard/Income"
 import Expense from "./pages/Dashboard/expense";
 import UserProvider from "./context/userContext";
 import CommunityHome from "./pages/Community/CommunityHome";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -27,10 +28,17 @@ const App = () => {
             <Route path="/income" exact element={<Income />} />
             <Route path="/expense" exact element={<Expense />} />
             <Route path="/community" exact element={<CommunityHome />} />
-
           </Routes>
         </Router>
       </div>
+
+      <Toaster
+        toastOptions={{
+          className: '',
+          style: {
+            fontsize: '13px',
+          }}}
+        />
     </UserProvider>
   )
 }
