@@ -12,6 +12,7 @@ import ExpenseTransactions from '../../components/Dashboard/ExpenseTransactions'
 
 import { LuHandCoins, LuWalletMinimal } from 'react-icons/lu';
 import { IoMdCard } from 'react-icons/io';
+import Last30DaysExpenses from '../../components/Charts/Last30DaysExpenses';
 
 const Home = () => {
   useUserAuth();
@@ -91,6 +92,9 @@ const Home = () => {
           <ExpenseTransactions
             transactions={dashboardData?.last30DaysExpense?.transactions || []}
             onSeeMore={() => navigate('/expense')}
+          />
+          <Last30DaysExpenses
+            data={dashboardData?.last30DaysExpense?.transactions || []}
           />
         </div>
       </div>
