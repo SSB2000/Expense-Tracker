@@ -12,6 +12,7 @@ import Home from "./pages/Dashboard/Home"
 import Income from "./pages/Dashboard/Income"
 import Expense from "./pages/Dashboard/expense";
 import UserProvider from "./context/userContext";
+import CommunityHome from "./pages/Community/CommunityHome";
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
             <Route path="/dashboard" exact element={<Home />} />
             <Route path="/income" exact element={<Income />} />
             <Route path="/expense" exact element={<Expense />} />
+            <Route path="/community" exact element={<CommunityHome />} />
+
           </Routes>
         </Router>
       </div>

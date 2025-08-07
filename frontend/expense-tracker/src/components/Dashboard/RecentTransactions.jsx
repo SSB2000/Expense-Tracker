@@ -6,7 +6,7 @@ import TransactionInfoCard from '../Cards/TransactionInfoCard';
 
 const RecentTransactions = ({ transactions, onSeeMore }) => {
   return (
-    <div className='cards'>
+    <div className='card'>
         <div className='flex items-center justify-between'>
             <h5 className=''>
                 Recent Transactions
