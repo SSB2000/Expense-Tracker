@@ -8,6 +8,7 @@ const IncomeOverview = ({ transactions, onAddIncome }) => {
     const [charData, setCharData] = React.useState([]); 
     useEffect(() => {
         const result = prepareIncomeBarChartData(transactions);
+        console.log('results', result);
         setCharData(result);
     }, [transactions]);
   return (
@@ -27,10 +28,10 @@ const IncomeOverview = ({ transactions, onAddIncome }) => {
                 Add Income
             </button>
 
-            
+                
         </div>
         <div className='mt-10'>
-                <CustomBarChart data={transactions}
+                <CustomBarChart data={charData}
                 />
             </div>
     </div>

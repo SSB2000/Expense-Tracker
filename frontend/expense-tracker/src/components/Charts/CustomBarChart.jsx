@@ -38,14 +38,14 @@ const CustomToolTip = ({ active, payload }) => {
 
 
 const CustomBarChart = ({ data }) => {
-    console.log(data)
+    console.log('data',data)
   return (
     <div className='bg-white mt-6'>
         <ResponsiveContainer width='100%' height={300}>
             <BarChart data={data}>
                 <CartesianGrid stroke='none' />
 
-                {/*<XAxis dataKey='month' tick={{ fontSize: 12, fill: '#555' }} stroke='none' />*/}
+                <XAxis dataKey='month' tick={{ fontSize: 12, fill: '#555' }} stroke='none' />
                 <YAxis tick={{ fontSize: 12, fill:'#555' }} stroke='none' />
 
                 <Tooltip content={<CustomToolTip />} />
