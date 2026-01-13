@@ -6,11 +6,11 @@ import {
   Route,
   Navigate,
 } from "react-router-dom"
-import Login from "./pages/Auth/Login";
-import SignUp from "./pages/Auth/SignUp"
+import Login from "./pages/Auth/login";
+import SignUp from "./pages/Auth/signUp"
 import Home from "./pages/Dashboard/Home"
 import Income from "./pages/Dashboard/Income"
-import Expense from "./pages/Dashboard/expense";
+import Expense from "./pages/Dashboard/Expense";
 import UserProvider from "./context/userContext";
 import CommunityHome from "./pages/Community/CommunityHome";
 import { Toaster } from "react-hot-toast";
